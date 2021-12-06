@@ -1,0 +1,209 @@
+@media (max-width: 1200px) {
+
+	.top {
+
+		&__slider-title {
+			font-size: 62px;
+		}
+
+		&__slider-img {
+			height: 640px;
+		}
+
+	}
+}
+
+@media (max-width: 992px) {
+
+	.footer {
+
+		&__info {
+			width: 380px;
+		}
+	}
+}
+
+@media (max-width: 840px) {
+
+	.top {
+
+		&__inner {
+			&::after {
+				height: 100%;
+			}
+		}
+
+		&__slider-title {
+			font-size: 44px;
+		}
+
+		&__slider-img {
+			height: 540px;
+		}
+
+	}
+}
+
+
+@media (max-width: 768px) {
+
+	.header {
+		&__btn {
+			display: none;
+		}
+	}
+
+	.menu {
+		&__list-item {
+			padding-left: 0;
+
+			& + .menu__list-item {
+				padding-right: 0;
+			}
+		}
+	}
+
+	.logo {
+		margin: 0;
+	}
+
+	.footer {
+
+		&__inner {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__info {
+			width: 100%;
+			margin-bottom: 50px;
+		}
+
+		&__info-text {
+			max-width: 100%;
+		}
+
+		&__menu {
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		&__social {
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+}
+
+@media (max-width: 650px) {
+
+	.top {
+		
+		&__inner {
+			padding-bottom: 25px;
+			padding-top: 30px;
+		}
+
+		&__slider-item {
+
+			.top__slider-img {
+				display: none;
+			}
+		}
+		
+		&__slider-text {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+@media (max-width: 540px) {
+	.logo {
+		order: -1;
+		position: relative;
+		z-index: 15;
+	}
+
+	.header {
+
+		&__inner {
+			flex-wrap: wrap;
+			padding-top: 42px;
+		}
+
+		&__btn-menu {
+			display: block;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+			order: -1;
+			position: relative;
+			z-index: 15;
+
+			span {
+				background-color: #464545;
+				width: 37px;
+				height: 3px;
+				border-radius: 4px;
+				display: block;
+				margin: 6px 0px;
+			}
+		}
+	}
+
+	.menu {
+		padding-right: 0;
+		width: 100%;
+		background-color: #fff;
+		position: relative;
+		z-index: 12;
+		text-align: center;
+		transform: translateY(-300px);
+		transition: all .5s;
+
+		&--open {
+			transform: translateY(30px);
+		}
+
+		&__list {
+			display: block;
+
+		}
+
+		&__list-item {
+			padding-right: 0;
+		}
+
+		&__list-link {
+			display: block;
+			padding: 15px 0;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+
+	.footer {
+
+		&__inner {
+			justify-content: space-between;
+		}
+
+		&__social {
+			margin-left: 0;
+		}
+
+		&__form {
+			display: block;
+		}
+
+		&__form-input {
+			margin-bottom: 20px;
+		}
+
+		&__form-button {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+}
